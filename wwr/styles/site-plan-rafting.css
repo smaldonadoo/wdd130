@@ -2,7 +2,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rock+Salt&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -12,7 +12,7 @@ Fonts are separated by a & */
   --accent2-color: #f3ede1;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Bubblegum Sans";
+  --heading-font: "Rock Salt";
   --paragraph-font: Montserrat, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
