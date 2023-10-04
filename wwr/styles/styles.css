@@ -1,0 +1,29 @@
+*{
+    max-width: 1600px;
+}
+#content {
+    width: 0 auto;
+    margin: 1600px;
+}
+nav a {
+    text-align: center;
+}
+#hero-msg h1 {
+    text-align: center;
+}
+#hero-msg h4 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
+main {
+    text-align: center;
+}
+#background {
+    height: 725px;
+}
+body {
+    background-color: 97d3cb;
+}
+
