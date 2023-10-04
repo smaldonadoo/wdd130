@@ -22,8 +22,26 @@ main {
 }
 #background {
     height: 725px;
+    background-color: #f3ede1;
 }
 body {
-    background-color: 97d3cb;
+    background-color: #97D3CB;
 }
-
+header {
+    background-color: #1d7268;
+}
+nav a:hover{
+    background-color: #ecc02f;
+}
+.book, .join{
+    background-color: #f3ede1;
+}
+.book:hover, .join:hover{
+    background-color: #97D3CB;
+}
+.msg{
+    background-color: #AE956E;
+}
+footer{
+    background-color: #1d7268;
+}
