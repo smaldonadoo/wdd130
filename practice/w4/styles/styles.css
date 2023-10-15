@@ -34,6 +34,9 @@ img{
 }
 footer{
     text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 500px;
 }
 h1:hover {
     color: black;
