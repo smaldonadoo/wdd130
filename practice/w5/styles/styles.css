@@ -1,0 +1,8 @@
+#top_image{
+    width: 100%;
+}
+.same_row{
+    background-color: gray;
+    max-width: 20%;
+    max-height: 20%;
+}
