@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rock+Salt&display=swap);
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -6,6 +7,7 @@ nav a {
     text-align: center;
     color: #f3ede1;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1 {
     text-align: center;
@@ -26,6 +28,13 @@ main {
 body {
     background-color: #AE956E;
     color: #513D2F;
+    font-family: "Monserrat", Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color: #1d7268;
@@ -36,6 +45,9 @@ nav a:hover{
 }
 .home-title{
     color:#513D2F;
+    font-family: "Rock Salt", "Titan One", "PT Sans Caption";
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4{
     color: #513D2F;
@@ -44,11 +56,19 @@ h4{
     background-color: #1d7268;
     color: #f3ede1;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join {
     background-color: #AE956E;
     color: #f3ede1;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: #ecc02f;
@@ -56,16 +76,26 @@ h4{
 }
 .msg{
     background-color: #1d7268;
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 200px;
 }
 .msg h2{
     color: #f3ede1;
 }
 .msg p{
     color: #f3ede1;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer{
     background-color: #1d7268;
     color: #f3ede1;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer .social img {
+    padding-top: 15px;
 }
 footer p{
     font-size: 1.2em;
@@ -84,9 +114,22 @@ footer p a:hover{
 .logo{
     width: 80px;
 }
+#logo_link {
+    padding-top: 5px;
+}
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img{
     width: 100%;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #513D2F;
+}
+main section img {
+    box-sizing: border-box;
 }
