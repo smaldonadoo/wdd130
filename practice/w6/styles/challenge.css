@@ -1,5 +1,34 @@
-.home-grid-challenge{
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-gap: 200px;
-}
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    h1{
+        font-size: 220px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        z-index: 1;
+        align-self:stretch;
+        margin: auto;
+    }
+    img{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        align-self:center;
+        margin: auto;
+    }
+    p{
+        font-size: 150px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: center;
+        z-index: 1;
+        color: maroon;
+        margin: auto;
+    }
+    #column_color{
+        background-color: gray;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        
+    }
