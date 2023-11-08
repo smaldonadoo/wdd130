@@ -197,6 +197,144 @@ main section img {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px black;
 }
+/* Start of FAQ page*/
+#help-img{
+    width: 100%;
+}
+#help{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#help-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#help-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#help-msg h1 {
+    text-align: center;
+    color: #513D2F;
+}
+#help-msg h4 {
+    text-align: center;
+    color: #513D2F;
+    background-color: #f3ede1;
+    margin-top: -30px;
+    border-radius: 4px;
+    padding: 3px;
+}
+.help-title{
+    color:#513D2F;
+    font-family: "Rock Salt", "Titan One", "PT Sans Caption";
+    font-size: 2em;
+    margin-top: 10px;
+}
+#faq-subtitle{
+    color: #f3ede1;
+    font-size: medium;
+    margin-left: 20px;
+}
+.questions-set{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#q-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: justify;
+}
+#a-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 80px;
+    text-align: justify;
+    font-size: medium;
+}
+#q-two{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: justify;
+}
+#a-two{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-top: 80px;
+    text-align: justify;
+    font-size: medium;
+}
+#q-three{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: justify;
+}
+#a-three{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 80px;
+    text-align: justify;
+    font-size: medium;
+}
+#q-four{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: 50px;
+    text-align: justify;
+}
+#a-four{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: 50px;
+    margin-top: 80px;
+    text-align: justify;
+    font-size: medium;
+}
+#q-five{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 50px;
+    text-align: justify;
+}
+#a-five{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 50px;
+    margin-top: 80px;
+    text-align: justify;
+    font-size: medium;
+}
+#q-six{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 50px;
+    text-align: justify;
+}
+#a-six{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 50px;
+    margin-top: 80px;
+    text-align: justify;
+    font-size: medium;
+}
+.footer-faq{
+    background-color: #1d7268;
+    color: #f3ede1;
+    padding: 25px 50px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
