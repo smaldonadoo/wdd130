@@ -3,25 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <a id="logo-crumbs&co" href="index.html"></a>
-        <img src="images/logo_crumbs&co.png" alt="Crumbs&Co Logo">
-        <p><a href="index.html">Home Page</a></p>
-        <p><a href="shopping-cart.html">Shopping cart</a></p>
-        <p><a href="latest-offerings.html">Latest Offerings</a></p>     
-    </header>
+    <div class="container">
+        <header>
+            <a id="logo-crumbs&co" href="index.html"></a>
+            <img class="logo" src="images/logo_crumbs&co.png" alt="Logo Crumbs&Co">
+            <nav>
+                <ul id="navbar-menu">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="latest-offerings.html">Latest Offerings</a></li>
+                    <li><a href="shoppingcart.html"><img src="images/rsz_bag-icon.png" alt="bag-icon"></a></li>   
+                </ul>
+            </nav>
+        </header>
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/rsz_rsz_cranberry-orange-muffins_thecozyapron_1.jpg" alt="cranberry-orange-muffin">
+                        <div>
+                            <p>Cranberry- Orange Muffin</p>
+                            <small>Price: $2.00</small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$2.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/rsz_apple-pie.jpg" alt="apple-pie">
+                        <div>
+                            <p>Classic Apple Pie</p>
+                            <small>Price: $22.00</small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$22.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/rsz_banana-bread.jpg" alt="banana-bread">
+                        <div>
+                            <p>Banana Bread</p>
+                            <small>Price: $18.50</small>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$18.50</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$42.50</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$7.65</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$50.15</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-2">
+        <div class="form-container">
+            <div class="form-btn">
+                <span>Payment</span>
+                <span>Information</span>
+            </div>
+            <form>
+                <input type="text" placeholder="Name associated with card">
+                <input type="text" placeholder="Credit/ Debit/ PayPal"></td>
+                <input type="text" placeholder="Address associated with the card">
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Expiration date">
+                <input type="text" placeholder="cvv">
+                <input type="text" placeholder="Pick up Date">
+                <input type="text" placeholder="Pick up Time">
+                <button type="Submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
 
     <footer>
         <p>Crumbs & Co. &copy; 2023 - Salma Maldonado</p>
-        <p><a href="shoppingcart.html"></a>Chocolate chips Muffin</p>
-        <img src="images/rsz_lore-schodts-fixdy7jobus-unsplash.jpg" alt="caramel stroop waffel muffin">
-        <p><a href="shoppingcart.html"></a>Caramel Stroop Waffel Muffin</p>
-        <img src="images/rsz_pexels-polina-tankilevitch-4110003.jpg" alt="caramel stroop waffel muffin">
-        <p><a href="shopping-cart.html">Shopping cart</a></p>
         <p><a href="latest-offerings.html">Latest Offerings</a></p>
         <p><a href="site-plan.html">Site Plan</a></p>
     </footer>
