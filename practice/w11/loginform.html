@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="images/logo_crumbs&co.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Name</b></label>
+          <input type="text" placeholder="Enter name associated with the card" name="uname" required>
+      
+          <label for="type"><b>Type of card</b></label>
+          <input type="password" placeholder="Credit/ Debit/ PayPal" name="type" required>
+
+          <label for="addr"><b>Address</b></label>
+          <input type="password" placeholder="Enter address associated with the card" name="addr" required>
+
+          <label for="num"><b>Card Number</b></label>
+          <input type="password" placeholder="Enter the card Number" name="num" required>
+
+          <label for="exp"><b>Expiration date</b></label>
+          <input type="password" placeholder="Enter expiration date" name="exp" required>
+
+          <label for="cvv"><b>cvv</b></label>
+          <input type="password" placeholder="Enter the cvv number" name="cvv" required>
+
+          <label for="date"><b>Pick up Date</b></label>
+          <input type="password" placeholder="Enter the pick up date" name="date" required>
+
+          <label for="time"><b>Pick up Time</b></label>
+          <input type="password" placeholder="Enter the pick up time" name="time" required>
+      
+          <button type="submit">Proceed to checkout</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+        </div>
+      </form>    
+</body>
+</html>
