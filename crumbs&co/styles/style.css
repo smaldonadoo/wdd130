@@ -54,7 +54,7 @@ a {
 }
 .menu-section .container-menu {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem,1fr));
     gap: 2rem;
 }
 .menu-section .container-menu .row{
@@ -85,6 +85,9 @@ a {
 .content h6 {
     font-size: 20px;
     float: center;
+}
+.content a {
+    font-size: 20px;
 }
 .menu-img{
     height: 150px;
@@ -133,7 +136,7 @@ a {
 }
 .shopping-map .shopping-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8rem,1fr));
     gap: 2rem;
 }
 footer{
