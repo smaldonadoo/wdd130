@@ -118,7 +118,7 @@ a {
     transition: 0.5s;
 }
 .content a:hover{
-    background-color: #7c4a21;
+    background-color: #bc9d9c;
 }
 
 .shopping-map {
@@ -271,4 +271,55 @@ border-radius: 50%;
 .container {
 padding: 16px;
 }
-  
+
+/*-----latest offerings-------*/
+.promotions{
+    background-color: whitesmoke;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.promotions .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem,1fr));
+    gap: 2rem;
+}
+.promotions .box-container .box{
+    flex: 1 1 55rem;
+    padding: 2rem;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.promotions .box-container .box .content-promo{
+    text-align: center;
+}
+.heading {
+    font-family: "Laila";
+    text-align: center;
+    font-size: 40px;
+    color: #bc9d9c;
+}
+.content-promo h3 {
+    font-size: 20px;
+    color: #a89790;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.content-promo a {
+    font-size: 20px;
+    margin-right: 30px;
+    padding: 5px 13px;
+    background-color: #9f6f62;
+    color: #f0e9e0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-align: center;
+}
+.content-promo a:hover {
+    background-color: #bc9d9c;
+}
+.box img {
+    width: 120px;
+    height: 150px;
+}
