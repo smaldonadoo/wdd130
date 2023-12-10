@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <a id="logo-crumbs&co" href="index.html"></a>
-            <img class="logo" src="images/logo_crumbs&co.png" alt="Logo Crumbs&Co">
-            <nav>
-                <ul id="navbar-menu">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"></a>
+                <img class="logo" src="images/logo_crumbs&co.png" alt="Logo Crumbs&Co">
+            </div>
+            <nav class="navbar-menu">
+                <ul>
                     <li><a href="index.html">Home Page</a></li>
-                    <li><a href="latest-offerings.html">Latest Offerings</a></li>
-                    <li><a href="shoppingcart.html"><img src="images/rsz_bag-icon.png" alt="bag-icon"></a></li>   
+                    <li><a href="latestofferings.html">Latest Offerings</a></li>
                 </ul>
             </nav>
-        </header>
+            <nav class="navbar-cart">
+                <ul>
+                    <li><a href="shoppingcart.html"><img id="imgbag" src="images/rsz_bag-icon.png" alt="bag-icon"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <h1 class="title-cart">Content of your shopping cart</h1>
 
     <div class="small-container cart-page">
         <table>
             <tr>
-                <th>Product</th>
                 <th>Quantity</th>
+                <th>Product</th>
                 <th>Subtotal</th>
             </tr>
             <tr>
+                <td><input type="number" value="1"></td>
                 <td>
                     <div class="cart-info">
                         <img src="images/rsz_rsz_cranberry-orange-muffins_thecozyapron_1.jpg" alt="cranberry-orange-muffin">
@@ -38,10 +46,10 @@
                         </div>
                     </div>
                 </td>
-                <td><input type="number" value="1"></td>
                 <td>$2.00</td>
             </tr>
             <tr>
+                <td><input type="number" value="1"></td>
                 <td>
                     <div class="cart-info">
                         <img src="images/rsz_apple-pie.jpg" alt="apple-pie">
@@ -52,10 +60,10 @@
                         </div>
                     </div>
                 </td>
-                <td><input type="number" value="1"></td>
                 <td>$22.00</td>
             </tr>
             <tr>
+                <td><input type="number" value="1"></td>
                 <td>
                     <div class="cart-info">
                         <img src="images/rsz_banana-bread.jpg" alt="banana-bread">
@@ -66,7 +74,6 @@
                         </div>
                     </div>
                 </td>
-                <td><input type="number" value="1"></td>
                 <td>$18.50</td>
             </tr>
         </table>
@@ -95,19 +102,46 @@
                 <span>Payment</span>
                 <span>Information</span>
             </div>
-            <form>
-                <input type="text" placeholder="Name associated with card">
-                <input type="text" placeholder="Credit/ Debit/ PayPal"></td>
-                <input type="text" placeholder="Address associated with the card">
-                <input type="text" placeholder="Card Number">
-                <input type="text" placeholder="Expiration date">
-                <input type="text" placeholder="cvv">
-                <input type="text" placeholder="Pick up Date">
-                <input type="text" placeholder="Pick up Time">
-                <button type="Submit" class="btn">Submit</button>
-            </form>
-        </div>
-    </div>
+            <form action="action_page.php" method="post">
+                <div class="imgcontainer">
+                  <img src="images/logo_crumbs&co.png" alt="Avatar" class="avatar">
+                </div>
+              
+                <div class="container">
+                  <label for="uname"><b>Name</b></label>
+                  <input type="text" placeholder="Enter name associated with the card" name="uname" required>
+              
+                  <label for="type"><b>Type of card</b></label>
+                  <input type="password" placeholder="Credit/ Debit/ PayPal" name="type" required>
+        
+                  <label for="addr"><b>Address</b></label>
+                  <input type="password" placeholder="Enter address associated with the card" name="addr" required>
+        
+                  <label for="num"><b>Card Number</b></label>
+                  <input type="password" placeholder="Enter the card Number" name="num" required>
+        
+                  <label for="exp"><b>Expiration date</b></label>
+                  <input type="password" placeholder="Enter expiration date" name="exp" required>
+        
+                  <label for="cvv"><b>cvv</b></label>
+                  <input type="password" placeholder="Enter the cvv number" name="cvv" required>
+        
+                  <label for="date"><b>Pick up Date</b></label>
+                  <input type="password" placeholder="Enter the pick up date" name="date" required>
+        
+                  <label for="time"><b>Pick up Time</b></label>
+                  <input type="password" placeholder="Enter the pick up time" name="time" required>
+              
+                  <button type="submit">Proceed to checkout</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+              
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                </div>
+              </form>    
 
 
     <footer>
